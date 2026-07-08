@@ -34,4 +34,9 @@ new_firewall_count = firewall_count + 4
 
 print(f"增加4台防火墙后，总数量：{new_firewall_count}")
 
+device_name = "switch01"
+ip_address = "192.168.1.1"
+
+print(f"设备名称{device_name}")
+print(f"设备ip{ip_address}")
 
