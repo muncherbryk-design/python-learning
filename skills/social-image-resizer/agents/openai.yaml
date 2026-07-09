@@ -1,0 +1,4 @@
+interface:
+  display_name: "Social Image Resizer"
+  short_description: "Resize images to 1080x1440 for 小红书 and 抖音."
+  default_prompt: "Use $social-image-resizer to resize my image to 1080x1440 for 小红书 or 抖音."
