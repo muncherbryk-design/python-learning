@@ -40,3 +40,13 @@ ip_address = "192.168.1.1"
 print(f"设备名称{device_name}")
 print(f"设备ip{ip_address}")
 
+#字符串与数字相加的两种方式
+router_name = "router01"
+router_ip = "192.168.10.1"
+router_ssh_port = 22
+router_count = 3
+
+print(f"路由器名称:{router_name}")
+print(f"路由器管理地址:{router_ip}")
+print("ssh端口是："+str(router_ssh_port))
+print(f"当前路由器数量：{router_count}")
