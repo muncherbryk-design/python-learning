@@ -61,5 +61,7 @@ print(f"删除后的总设备：{server_list}")
 print(f"最后剩余服务器数量为：{len(server_list)}")
 
 
+#提交试验
+
 
 
