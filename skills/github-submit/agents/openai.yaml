@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Submit"
+  short_description: "Check PyCharm project changes, commit, and push learning code."
+  default_prompt: "Use $github-submit to check my PyCharm project changes, then commit and push today's Python learning code."
