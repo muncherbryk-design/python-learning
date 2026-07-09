@@ -1,0 +1,4 @@
+interface:
+  display_name: "Open ERPNext Local"
+  short_description: "Start ERPNext with Docker and open localhost:8080."
+  default_prompt: "Use $open-erp-github to start my local ERPNext Docker project and open http://localhost:8080."

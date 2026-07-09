@@ -1,0 +1,4 @@
+interface:
+  display_name: "关闭 ERPNext"
+  short_description: "安全停止 ERPNext，并关闭 Docker Desktop 后台。"
+  default_prompt: "Use $close-erpnext to safely stop my local Docker ERPNext, close Docker Desktop background processes, and keep my data."
