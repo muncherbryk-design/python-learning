@@ -40,3 +40,15 @@ server_port_list = [22,80,443]
 
 for server,server_ip,server_port in zip(server_list,server_ip_list,server_port_list):
     print(f"服务器名称：{server}，服务器IP：{server_ip}，检测端口：{server_port}")
+
+
+#扩练习
+device_list = ["switch01","router01","firewall01","server01"]
+ip_list = ["192.168.1.1","192.168.10.1","10.0.0.1","172.16.1.10"]
+port_list = [22,22,443,80]
+service_list = ["SSH","SSH","HTTPS","HTTP"]
+
+for device,ip,port,service in zip(device_list,ip_list,port_list,service_list):
+    print(f"设备名称：{device}，管理地址：{ip}，检测端口：{port}，服务类型：{service}")
+
+print(f"本次需要检测的设备数量：{len(device_list)}")
