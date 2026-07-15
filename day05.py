@@ -279,3 +279,68 @@ if not device_online:
 else:
     print(f"请检查{device_name}的网络连接")
 
+device_name_list = ["switch01","router01","server01"]
+device_ip_list = ["192.168.1.1","192.168.1.2","172.16.1.10"]
+device_online_list = [True, False, True]
+
+for device_name,device_ip,device_online in zip(device_name_list,device_ip_list,device_online_list):
+    if device_online:
+        print(f"设备{device_name}：{device_ip}在线")
+    else:
+        print(f"设备{device_name}：{device_ip}离线")
+
+
+device_name_list = ["firewall01","web01","database01","backup01"]
+device_ip_list = ["10.0.0.1","10.0.0.10","10.0.0.20","10.0.0.30"]
+device_online_list = [True,True,False,False]
+
+for device_name,device_ip,device_online in zip(device_name_list,device_ip_list,device_online_list):
+    if device_online:
+        print(f"设备 {device_name} ({device_ip}) 在线")
+    else:
+        print(f"设备 {device_name} ({device_ip}) 离线")
+
+
+# 统计在线和离线设备数量
+
+device_name_list = ["firewall01", "web01", "database01", "backup01"]
+device_ip_list = ["10.0.0.1", "10.0.0.10", "10.0.0.20", "10.0.0.30"]
+device_online_list = [True, True, False, False]
+
+online_count = 0
+offline_count = 0
+
+for device_name, device_ip, device_online in zip(
+    device_name_list,
+    device_ip_list,
+    device_online_list
+):
+    if device_online:
+        print(f"设备 {device_name}（{device_ip}）在线")
+        online_count += 1
+    else:
+        print(f"设备 {device_name}（{device_ip}）离线")
+        offline_count += 1
+
+print(f"在线设备数量：{online_count}")
+print(f"离线设备数量：{offline_count}")
+print(f"设备总数量：{len(device_name_list)}")
+
+
+device_name_list = ["switch01","router01","server01","firewall01","backup01"]
+device_ip_list = ["192.168.1.1","192.168.1.2","192.168.1.10","192.168.1.20","192.168.1.300"]
+device_online_list = [True,False,True,True,False]
+
+on_count = 0
+off_count = 0
+
+for device_name,device_ip,device_online in zip(
+    device_name_list,device_ip_list,device_online_list
+):
+    if device_online:
+        on_count +=1
+    else:
+        off_count +=1
+print(f"在线设备数量{on_count}")
+print(f"离线设备数量{off_count}")
+print(f"总设备数量{len(device_name_list)}")
